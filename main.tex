@@ -1,0 +1,60 @@
+ \documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{parskip}
+
+\title{RaVIOLi: Random Variable Inequalities and Operations Library}
+\author{Gerran Parker, Scott Airey, Fintan Pawley, Oliver Pilkington}
+\date{Spring 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Summary}
+
+\text{Statistical distributions are a way of representing a dataset of random variables.} \\ {Given a distribution, statisticians can perform probability calculations on} \\ {sample data and then use their results to make inferences about populations. Our Library aims to simplify this process by computing the probability} \\ {calculations for you.} \\ 
+\text{Our Library takes the input of a distribution in the format:} \begin{center}
+    {X \verb|~|  Distribution(variables),}
+\end{center} {and then upon request can output the corresponding Expectation and Variance. As well as performing transformations on distributions} \\ {We have programmed this for:}
+\begin{center}
+    $$X \verb|~| Uniform(X_1,X_2...X_n)$$  
+    $$X \verb|~| Normal(\mu,\sigma^2)$$  
+    $$X \verb|~| Binomial(n,p)$$    
+    $$X \verb|~| Poisson(\lambda)$$  
+    $$X \verb|~| Bernoulli(p)$$
+    $$X \verb|~|Exponential(\lambda)$$
+
+\text{RaVIOLi can add or subtract integers to distributions thus causing a}{ linear transformation. or multiply and divide by integers thus scaling the distribution}
+\end{center}
+
+\section {Statement of need}
+While the concept of our library is not novel, it serves as a comprehensive and practical tool for working with probability distributions. Our library underpins efforts in a multitude of different sectors such as in the business and finance industry, for example, [7] to aid with risk assessments and can be used to approximate the distribution of portfolio returns and evaluate overall risk. Moreso, our library can be utilised in the healthcare industry [8] where a Poisson distribution can help model the occurrence of rare events, such as disease outbreaks.
+
+Our library takes inspiration from libraries already created, such as SciPy. There is a module in SciPy called scipy.stats, which [9] is a module that offers tools for working with various probability distributions, performing hypothesis tests and computing descriptive statistics, making it a valuable resource for statistical analysis in Python.
+
+Our library's primary users will be data scientists, statisticians, researchers, engineers and students. However, with the variety of tools our library holds, it can additionally support secondary audiences such as business analysts and software developers. Our library offers an accessible and convenient resource for a range of different users to analyse their data and draw conclusions promptly while leaving no room for human error.   
+
+\section{Conclusion}
+This paper has given a description of RaVIOLi: a library with the goal of interpreting and analysing statistical distributions. Our library could be expanded to explore a different range of distributions and operations in the future. This library is written in a fully modular way, is well documented and is automatically tested.  
+
+
+\section{References}
+[1] De Moivre, A (1738/1959). “On the Law of Normal Probability.” 
+
+[2] Bernoulli, J. (1713). Ars Conjectandi. Basel: Thurnisius.
+
+[3] Poisson, S. D. (1837). Recherches sur la probabilité des jugements en matière criminelle et en matière civile. Paris: Bachelier.
+
+[4] Laplace, P. S. (1812). Théorie analytique des probabilités. Paris: Courcier.
+
+[5] Huygens, C. (1657). De Ratiociniis in Ludo Aleae.
+
+[6] Pearson, K. (1894). Contributions to the mathematical theory of evolution. Philosophical Transactions of the Royal Society A, 185, 71–110.
+
+[7] GeeksforGeeks. (2024, July 29). Real life applications of continuous probability distribution. 
+
+[8] Brillica. (2025, January 3). Types of distributions in statistics. 
+
+[9] Codecademy. (2024, December 22). Scipy.stats 
+\end{document}
